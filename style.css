@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
 :root {
-    --primary: #004D2C;
-    --primary-light: #007041;
-    --secondary: #00A859;
-    --accent: #8B0000;
-    --accent-hover: #A30000;
+    --primary: #213756;
+    --primary-light: #516794;
+    --secondary: #6cafdf;
+    --accent: #b6081f;
+    --accent-hover: #96071a;
     --text-main: #2D3436;
     --text-muted: #636E72;
     --bg-white: #FFFFFF;
     --bg-light: #F8F9FA;
-    --bg-dark: #002D1A;
+    --bg-dark: #152438;
     --white: #FFFFFF;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
