@@ -13,11 +13,11 @@
 
     <!-- Header / Navigation (Simplified for Landing) -->
     <header style="position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm);">
-        <nav class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px;">
+        <nav class="container nav-container">
             <div class="logo" style="font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--primary); font-size: 1.2rem;">
                 DIEGO ARANDA <span style="color: var(--secondary);">2026-2030</span>
             </div>
-            <div class="nav-links" style="display: flex; gap: 20px;">
+            <div class="nav-links">
                 <a href="#propuestas" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">Propuestas</a>
                 <a href="#contacto" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Sumarse</a>
             </div>
@@ -26,7 +26,7 @@
 
     <!-- 3.1 HERO SECTION -->
     <section id="hero" style="min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding-top: 80px;">
-        <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div class="container hero-grid">
             <div class="hero-text reveal">
                 <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--primary); margin-bottom: 20px;">Diego Fernando <br>Aranda Lozano</h1>
                 <p style="font-size: 1.5rem; color: var(--secondary); font-weight: 600; margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 20px;">
@@ -35,7 +35,7 @@
                 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; max-width: 600px;">
                     Liderazgo, experiencia internacional y visión estratégica para transformar la Universidad del Tolima en un patrimonio intelectual y científico de clase mundial.
                 </p>
-                <div style="display: flex; gap: 15px;">
+                <div class="btn-wrapper" style="display: flex; gap: 15px;">
                     <a href="#propuestas" class="btn btn-primary">Ver propuestas</a>
                     <a href="#quien-es" class="btn btn-outline">Conocer trayectoria</a>
                 </div>
@@ -57,7 +57,7 @@
     <section id="quien-es">
         <div class="container">
             <h2 class="section-title text-center" style="display: block; margin-bottom: 50px;">Quién es Diego</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+            <div class="about-grid">
                 <div class="reveal">
                     <img src="https://via.placeholder.com/500x600/007041/FFFFFF?text=EXPERIENCIA" alt="Diego Aranda Rectoría" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-md);">
                 </div>
@@ -139,35 +139,35 @@
         <div class="container">
             <h2 class="section-title text-center" style="display: block;">Principios Orientadores</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <div class="reveal" style="text-align: center; padding: 25px; border-radius: var(--radius); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="reveal card-hover" style="text-align: center; padding: 25px; border-radius: var(--radius); background: white; box-shadow: var(--shadow-sm);">
                     <div style="width: 60px; height: 60px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: var(--secondary); font-size: 1.5rem;">
                         <i class="fas fa-award"></i>
                     </div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Excelencia Académica</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted);">Docencia, investigación y extensión de alto nivel.</p>
                 </div>
-                <div class="reveal" style="text-align: center; padding: 25px; border-radius: var(--radius); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="reveal card-hover" style="text-align: center; padding: 25px; border-radius: var(--radius); background: white; box-shadow: var(--shadow-sm);">
                     <div style="width: 60px; height: 60px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: var(--secondary); font-size: 1.5rem;">
                         <i class="fas fa-hand-holding-heart"></i>
                     </div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Impacto Social</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted);">Ciencia orientada a resolver desafíos regionales.</p>
                 </div>
-                <div class="reveal" style="text-align: center; padding: 25px; border-radius: var(--radius); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="reveal card-hover" style="text-align: center; padding: 25px; border-radius: var(--radius); background: white; box-shadow: var(--shadow-sm);">
                     <div style="width: 60px; height: 60px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: var(--secondary); font-size: 1.5rem;">
                         <i class="fas fa-users-cog"></i>
                     </div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Formación Integral</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted);">Trayectorias académicas exitosas y humanas.</p>
                 </div>
-                <div class="reveal" style="text-align: center; padding: 25px; border-radius: var(--radius); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="reveal card-hover" style="text-align: center; padding: 25px; border-radius: var(--radius); background: white; box-shadow: var(--shadow-sm);">
                     <div style="width: 60px; height: 60px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: var(--secondary); font-size: 1.5rem;">
                         <i class="fas fa-globe-americas"></i>
                     </div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Internacionalización</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted);">Conexión de la UT con redes globales.</p>
                 </div>
-                <div class="reveal" style="text-align: center; padding: 25px; border-radius: var(--radius); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="reveal card-hover" style="text-align: center; padding: 25px; border-radius: var(--radius); background: white; box-shadow: var(--shadow-sm);">
                     <div style="width: 60px; height: 60px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: var(--secondary); font-size: 1.5rem;">
                         <i class="fas fa-balance-scale"></i>
                     </div>
@@ -309,19 +309,19 @@
         <div class="container">
             <h2 class="section-title text-center" style="display: block;">Trayectoria que Respalda</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <div class="reveal" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: var(--transition);">
+                <div class="reveal card-hover" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--secondary); margin-bottom: 15px;">Formación Internacional</h3>
                     <p style="font-size: 0.9rem;">Experiencias académicas y doctorales en contextos de alta exigencia global.</p>
                 </div>
-                <div class="reveal" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: var(--transition);">
+                <div class="reveal card-hover" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--secondary); margin-bottom: 15px;">Experiencia en Gestión</h3>
                     <p style="font-size: 0.9rem;">Liderazgo ejecutivo en instituciones de educación superior a nivel estratégico.</p>
                 </div>
-                <div class="reveal" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: var(--transition);">
+                <div class="reveal card-hover" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--secondary); margin-bottom: 15px;">Liderazgo Académico</h3>
                     <p style="font-size: 0.9rem;">Reconocimiento por la comunidad académica en la construcción de currículos de calidad.</p>
                 </div>
-                <div class="reveal" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: var(--transition);">
+                <div class="reveal card-hover" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--secondary); margin-bottom: 15px;">Calidad Institucional</h3>
                     <p style="font-size: 0.9rem;">Participación directa en procesos ante el Consejo Nacional de Acreditación (CNA).</p>
                 </div>
@@ -356,7 +356,7 @@
 
     <!-- 3.9 CIERRE + ELECCIONES + CONTACTO -->
     <section id="contacto">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px;">
+        <div class="container contact-grid">
             <div class="reveal">
                 <h2 style="color: var(--primary); margin-bottom: 20px;">Un Compromiso con el Futuro</h2>
                 <p style="margin-bottom: 30px; font-style: italic;">"El futuro de la Universidad del Tolima se construirá a partir de la capacidad de su comunidad para trabajar con espíritu de cooperación, respeto y consenso."</p>
